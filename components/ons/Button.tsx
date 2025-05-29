@@ -1,5 +1,5 @@
 import React from "react";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Pressable, Text } from "react-native";
 import { styles } from "./Button.styles";
 
 export interface Props {
@@ -29,7 +29,7 @@ const ONSButton = (props: Props) => {
       disabled={props.loading || props.disabled}
       onPress={props.onClick}
     >
-      <Text>{props.label}</Text>
+      <Text style={styles.buttonText}>{props.label}</Text>
     </Pressable>
   );
 };

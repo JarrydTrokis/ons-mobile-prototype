@@ -6,24 +6,26 @@ export const styles = StyleSheet.create({
     backgroundColor: OnsColors.onsColorButton,
     borderWidth: 0,
     borderRadius: 4, // $input-radius, adjust as needed
-    color: OnsColors.onsColorTextInverse,
     // cursor: pointer, // Not supported in React Native
     display: "flex",
     alignItems: "center",
-    fontFamily: undefined, // inherit by default
     margin: 0,
     paddingVertical: 12, // 0.75rem
     paddingHorizontal: 16, // 1rem
     position: "relative",
-    textAlign: "center",
-    textDecorationLine: "none",
-    // textRendering: 'optimizelegibility', // Not supported in React Native
     verticalAlign: "top",
     shadowColor: OnsColors.onsColorButtonShadow,
     shadowOpacity: 1,
     shadowRadius: 0,
     shadowOffset: { width: 0, height: 3 }, // $button-shadow-size
     // whiteSpace: 'nowrap', // Not supported in React Native
+  },
+  buttonText: {
+    color: OnsColors.onsColorTextInverse,
+    fontFamily: undefined, // inherit by default
+    textAlign: "center",
+    textDecorationLine: "none",
+    // textRendering: 'optimizelegibility', // Not supported in React Native
   },
   buttonIcon: {
     tintColor: OnsColors.onsColorTextInverse,
@@ -42,12 +44,12 @@ export const styles = StyleSheet.create({
     width: 16,
   },
   buttonSecondaryInner: {
-    shadowColor: "var(--ons-color-button-secondary-shadow)",
+    shadowColor: OnsColors.onsColorButtonSecondaryShadow,
     shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 1,
     shadowRadius: 0,
-    backgroundColor: "var(--ons-color-button-secondary)",
-    color: "var(--ons-color-text)",
+    backgroundColor: OnsColors.onsColorButtonSecondary,
+    color: OnsColors.onsColorText,
     fontWeight: "400", // $font-weight-regular
   },
   buttonGhostInner: {
@@ -55,24 +57,24 @@ export const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: "rgba(255,255,255,0.6)",
     shadowOpacity: 0,
-    color: "var(--ons-color-text-inverse)",
+    color: OnsColors.onsColorTextInverse,
   },
   buttonGhostDarkInner: {
     backgroundColor: "transparent",
     borderWidth: 2,
-    borderColor: "var(--ons-color-black)",
+    borderColor: OnsColors.onsColorBlack,
     shadowOpacity: 0,
-    color: "var(--ons-color-text)",
+    color: OnsColors.onsColorText,
   },
   buttonDisabledInner: {
     opacity: 0.4,
   },
   buttonDropdownInner: {
-    backgroundColor: "var(--ons-color-branded-tint)",
+    backgroundColor: OnsColors.onsColorBrandedTint,
     borderWidth: 0,
     borderRadius: 0,
     shadowOpacity: 0,
-    color: "var(--ons-color-branded-text)",
+    color: OnsColors.onsColorBrandedText,
     display: "flex",
     fontWeight: "400",
     paddingVertical: 10, // 0.6rem
@@ -80,7 +82,7 @@ export const styles = StyleSheet.create({
     textAlign: "left",
   },
   buttonDropdownIcon: {
-    tintColor: "var(--ons-color-branded-text)",
+    tintColor: OnsColors.onsColorBrandedText,
     alignSelf: "flex-end",
     marginTop: 4,
   },
@@ -89,7 +91,7 @@ export const styles = StyleSheet.create({
     borderWidth: 0,
     borderRadius: 0,
     shadowOpacity: 0,
-    color: "var(--ons-color-black)",
+    color: OnsColors.onsColorBlack,
     fontWeight: "400",
     padding: 2,
   },
@@ -103,11 +105,11 @@ export const styles = StyleSheet.create({
   buttonMenuInner: {
     backgroundColor: "rgba(0,0,0,0)",
     shadowOpacity: 0,
-    color: "var(--ons-color-text-link)",
+    color: OnsColors.onsColorTextLink,
     padding: 0,
   },
   buttonMenuIcon: {
-    tintColor: "var(--ons-color-text-link)",
+    tintColor: OnsColors.onsColorTextLink,
     height: 16,
     width: 16,
     marginTop: 0,
@@ -128,7 +130,7 @@ export const styles = StyleSheet.create({
     padding: 0,
   },
   buttonSearchIconIcon: {
-    tintColor: "var(--ons-color-text-link)",
+    tintColor: OnsColors.onsColorTextLink,
     height: 24,
     width: 24,
     margin: 0,
@@ -146,7 +148,7 @@ export const styles = StyleSheet.create({
     padding: 0,
   },
   buttonCloseIcon: {
-    tintColor: "var(--ons-color-text-link)",
+    tintColor: OnsColors.onsColorTextLink,
     height: 24,
     width: 24,
     margin: 0,
@@ -156,12 +158,12 @@ export const styles = StyleSheet.create({
     borderWidth: 0,
     borderRadius: 0,
     shadowOpacity: 0,
-    color: "var(--ons-color-text-link)",
+    color: OnsColors.onsColorTextLink,
     fontWeight: "400",
     padding: 0,
   },
   buttonTextLinkInverseInner: {
-    color: "var(--ons-color-text-inverse-link)",
+    color: OnsColors.onsColorTextInverseLink,
   },
   buttonLoaderInner: {
     position: "relative",
